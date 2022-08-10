@@ -137,6 +137,7 @@ body {
     height: 74px;
     padding: 25px 67px;
     background-color: #CC8B86;
+    border: none;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -154,6 +155,7 @@ button .button {
     line-height: 50px;
     text-transform: uppercase;
     text-align: center;
+    margin: 0 0 40px 0;
 }
 
 .about-us {
@@ -204,8 +206,35 @@ button .button {
     text-align: left;
 }
 
-/*  */
-.portfolio-title {
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0; 
+    list-style-type: none;
+}
+
+.portfolio-item-bg {
+    background-color: rgba(100, 72, 69, 0.8);
+    width: 488px;
+    height: 451px;
+    position: absolute;
+}
+
+.portfolio-list li:nth-child(1) {
+    background-image: url(../images/interier-1.jpg);
+    width: 488px;
+    height: 451px;
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.portfolio-item-title {
     color: #ffffff;
     font-weight: 500;
     font-size: 30px;
@@ -222,30 +251,6 @@ button .button {
     color: #FFFFFF;
     text-align: left;
 }
-/*  */
-
-.portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0; 
-    list-style-type: none;
-}
-
-.portfolio-list li:nth-child(1) {
-    background-image: url(../images/interier-1.jpg);
-    background-color: rgba(100, 72, 69, 0.8);
-    width: 488px;
-    height: 451px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.portfolio-item {
-    margin-bottom: 30px;
-}
 
 .portfolio-link {
     font-size: 30px;
@@ -254,10 +259,17 @@ button .button {
     color: #533738;
 }
 
-/* перерыв */
+.portfolio-link::before {
+    content: '';
+}
+
 
 .wrapper-color {
     background-color: #E2C4BA;
+}
+
+.team {
+    padding-top: 50px;
 }
 
 .team-list {
@@ -288,6 +300,7 @@ button .button {
 .review {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .right-column {
@@ -296,6 +309,11 @@ button .button {
 
 .review blockquote {
     margin: 0;
+}
+
+.left-column cite {
+    text-transform: uppercase;
+    font-style: normal;
 }
 
 /* .review::before {
@@ -309,6 +327,7 @@ button .button {
 
 .container-double {
     display: flex;
+    width: 1120px;
 }
 
 .request {
@@ -318,16 +337,13 @@ button .button {
 
 .request .title {
     text-align: left;
+    margin: 50px 0 40px 0;
 }
 
-.reqiest .text {
+.request .text {
     margin-bottom: 44px;
+    opacity: 0.6;
 }
-
-.request-form {
-    margin-top: 44px;
-}
-
 
 .form-field {
     width: 100%;
@@ -336,6 +352,7 @@ button .button {
     background: none;
     border: 0;
     border-bottom: 1px solid #ffffff;
+    opacity: 0.6;
 }
 
 input::placeholder {
@@ -343,7 +360,7 @@ input::placeholder {
     font-family: 'Montserrat';
     font-weight: 400;  
     font-size: 18px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .page-footer {
