@@ -128,9 +128,6 @@ body {
     margin: 0;
 }
 
-.text-half {
-    margin: 24px 0 21px 0;
-}
 
 .button {
     width: fit-content;
@@ -277,6 +274,7 @@ button .button {
     justify-content: space-between;
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 .team-item {
@@ -285,6 +283,14 @@ button .button {
 
 .team .container {
     margin-bottom: 35px;
+}
+
+.team .text {
+    margin: 0;
+}
+
+.team-img {
+    margin-bottom: 10px;
 }
 
 .work-stapes-list {
