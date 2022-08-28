@@ -1,2 +1,0 @@
-# scandi
-Design studio
