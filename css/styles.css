@@ -446,7 +446,7 @@ input::placeholder {
     display: flex;
     justify-content: space-between;
     width: 1200px;
-    margin-bottom: 0;
+    margin-bottom: 37px;
 }
 
 .container-footer {
